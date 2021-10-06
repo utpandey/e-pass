@@ -1,0 +1,90 @@
+// "tiny" | "small" | "medium" | "large" | "extra"
+.sb-avatar {
+    // background-color: #2461EF;
+}
+
+.user-online {}
+
+.sb-avatar-initials {
+    background-color: rgb(211, 199, 199);
+}
+
+.sb-avatar-initials--tiny {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &>h1 {
+        margin: auto;
+        font-size: 1rem;
+    }
+}
+
+.sb-avatar-initials--small {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &>h1 {
+        margin: auto;
+        font-size: 1.5rem;
+    }
+}
+
+.sb-avatar-initials--medium {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &>h1 {
+        margin: auto;
+        font-size: 2rem;
+    }
+}
+
+.sb-avatar-initials--large {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &>h1 {
+        margin: auto;
+        font-size: 3rem;
+    }
+}
+
+.sb-avatar-initials--extra {
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &>h1 {
+        margin: auto;
+        font-size: 4rem;
+    }
+}
+
+.sb-avatar--tiny {
+    width: 1rem;
+}
+
+.sb-avatar--small {
+    width: 2rem;
+}
+
+.sb-avatar--medium {
+    width: 3rem;
+}
+
+.sb-avatar--large {
+    width: 4rem;
+}
+
+.sb-avatar--extra {
+    width: 5rem;
+}
