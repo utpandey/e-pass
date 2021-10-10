@@ -8,11 +8,11 @@ export interface InputProps {
   /**
    * What should be the name of the input?
    */
-  name: string;
+  name?: string;
   /**
    * What should be the id of the input?
    */
-  id: string;
+  id?: string;
   /**
    * What tailwind class should it be?
    */
@@ -36,12 +36,12 @@ export interface InputProps {
     | "checkbox"
     | "image"
     | "file"
-  | "search";
+    | "search";
   /**
    * Input change handler?
    */
   onChangeInput?: any;
-  value: string;
+  value?: string;
 }
 
 export const Input: React.FC<InputProps> = ({
@@ -69,7 +69,7 @@ export const Input: React.FC<InputProps> = ({
         `${inputClass}`,
         `${error}`,
       ].join(" ")}
-      onChange={(e) => onChangeInput(e.target.value) }
+      onChange={(e) => onChangeInput(e.target.value)}
     />
   );
 };

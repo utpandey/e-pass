@@ -1,2 +1,2 @@
-const withTM = require("next-transpile-modules")(["@investiq/components"]);
+const withTM = require("next-transpile-modules")([]);
 module.exports = withTM();
