@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import "./button.scss";
 // import { IButton } from "../../../types/index";
 
@@ -8,13 +8,17 @@ export interface IButtonProps {
    */
   primary?: boolean;
   /**
+   * Type for this button?
+   */
+  type?: "button" | "submit" | "reset";
+  /**
    * What background color to use
    */
   backgroundColor?: string;
   /**
    * What radius it should be
    */
-  borderRadius?: string;
+  borderRadius?:  "-none" | "-sm" | "-" | "-md" | "-lg" | "-xl" | "-2xl" | "-3xl" | "-full";
   /**
    * Border style of the button
    */
@@ -27,6 +31,10 @@ export interface IButtonProps {
    * How large should the button be?
    */
   size?: "small" | "medium" | "large" | "extra";
+  /**
+   * How much the lie height should be?
+   */
+  lineHeight?: "none" | "tight" | "snug" | "normal" | "relaxed" | "loose";
   /**
    * Button contents
    */
@@ -55,12 +63,14 @@ export interface IButtonProps {
 
 export const Button: React.FC<IButtonProps> = ({
   primary = false,
+  type = "button",
   size = "medium",
   backgroundColor,
   borderStyles,
-  borderRadius,
+  borderRadius = "",
   label,
   labelStyles,
+  lineHeight = "loose",
   boxShadow,
   icon,
   iconAlt,
@@ -71,14 +81,15 @@ export const Button: React.FC<IButtonProps> = ({
 
   return (
     <button
-      type="button"
+      type={type}
       className={[
-        borderRadius,
+        `rounded${borderRadius}`,
         borderStyles,
         backgroundColor,
         labelStyles,
         "sb-button",
         `sb-button--${size}`,
+        `leading-${lineHeight}`,
         mode,
       ].join(" ")}
       style={{ backgroundColor, boxShadow }}

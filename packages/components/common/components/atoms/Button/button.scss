@@ -1,13 +1,11 @@
 .sb-button {
     font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    border-radius: 3em;
+    font-weight: 600;
     cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     // display: inline-block;
-    // line-height: 1;
 }
 
 .sb-button--primary {

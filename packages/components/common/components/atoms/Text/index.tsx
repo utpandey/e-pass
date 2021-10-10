@@ -1,10 +1,11 @@
 import React from "react";
+import { motion } from "framer-motion";
 
-export interface TextProps {
+export interface ITextProps {
   /**
    * This is the text label
    */
-  label: string;
+  textLabel: string;
   /**
    * This is the font-size text
    */
@@ -29,16 +30,21 @@ export interface TextProps {
    * This is the text transform - 'uppercase', 'lowercase', 'Capitalize'
    */
   transform?: string;
+  /**
+   * Is it a framer motion component?
+   */
+  isFramer?: boolean;
 }
 
-export const Text: React.FC<TextProps> = ({
-  label = "Text",
-  textSize = "text-base md:text-xl sm:text-4xl",
-  textStyles,
-  color = "#000",
+export const Text: React.FC<ITextProps> = ({
+  textLabel = "Text",
+  textSize = "",
+  textStyles = "p-0",
+  color,
   weight = 600,
   family,
   transform = "none",
+  isFramer = false,
   ...props
 }) => {
   return (
@@ -52,8 +58,9 @@ export const Text: React.FC<TextProps> = ({
         }}
         {...props}
       >
-        {label}
+        {textLabel}
       </p>
+      )
     </>
   );
 };

@@ -33,7 +33,7 @@ export const Secondary = Template.bind({});
 Secondary.args = {
   primary: true,
   label: "FOLLOW",
-  borderRadius: "rounded-none",
+  borderRadius: "-none",
   labelStyles: "text-lg text-center",
 };
 
@@ -41,7 +41,7 @@ export const WithIcon = Template.bind({});
 WithIcon.args = {
   primary: true,
   label: "Create Post",
-  borderRadius: "rounded-none",
+  borderRadius: "-none",
   labelStyles: "text-lg text-center",
   icon: `${user}`,
   iconAlt: "User",
@@ -51,7 +51,7 @@ WithIcon.args = {
 export const FilterActivitySelected = Template.bind({});
 FilterActivitySelected.args = {
   label: "DRILLS",
-  borderRadius: "rounded-none",
+  borderRadius: "-none",
   backgroundColor: "bg-white",
   borderStyles: "border border-blue-500 border-opacity-100 border-b-4",
   labelStyles: "text-blue-600 text-xs text-center",
@@ -60,7 +60,7 @@ FilterActivitySelected.args = {
 export const FilterActivityIdle = Template.bind({});
 FilterActivityIdle.args = {
   label: "PAPER DRILLS",
-  borderRadius: "rounded-none",
+  borderRadius: "-none",
   backgroundColor: "bg-white",
   borderStyles: "border-2 border-blue-200 border-opacity-100 ",
   labelStyles: "text-blue-200 text-xs text-center",
@@ -69,7 +69,7 @@ FilterActivityIdle.args = {
 export const GameTypeSelected = Template.bind({});
 GameTypeSelected.args = {
   label: "ALL",
-  borderRadius: "rounded-none",
+  borderRadius: "-none",
   backgroundColor: "bg-white",
   borderStyles: "border-4 rounded-md  border-blue-500 border-opacity-100 ",
   labelStyles: "text-blue-500 text-sm text-center",
@@ -78,7 +78,7 @@ GameTypeSelected.args = {
 export const GameTypeIdle = Template.bind({});
 GameTypeIdle.args = {
   label: "FREE",
-  borderRadius: "rounded-none",
+  borderRadius: "-none",
   backgroundColor: "bg-white",
   borderStyles: " border-2 rounded-md  border-blue-200 border-opacity-100",
   labelStyles: "text-blue-200 text-sm text-center",
@@ -87,7 +87,7 @@ GameTypeIdle.args = {
 export const HonorBoardSelected = Template.bind({});
 HonorBoardSelected.args = {
   label: "All Time",
-  borderRadius: "rounded-none",
+  borderRadius: "-none",
   backgroundColor: "bg-blue-500",
   borderStyles:
     "border-2  border-2 rounded-md  border-blue-500  border-opacity-100 ",
@@ -96,7 +96,7 @@ HonorBoardSelected.args = {
 export const HonorBoardIdle = Template.bind({});
 HonorBoardIdle.args = {
   label: "This Month",
-  borderRadius: "rounded-none",
+  borderRadius: "-none",
   backgroundColor: "bg-white",
   borderStyles: "border-4 rounded-md  border-blue-500 border-opacity-100 ",
   labelStyles: "text-blue-500 text-sm text-center",
