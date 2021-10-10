@@ -60,6 +60,7 @@ const adminStaticData: Array<IUserProfile> = [
 
 const Admin: React.FC<IState> = () => {
   const [adminData, setAdminData] = useState<IUserProfile[]>([]);
+  console.log(adminData);
   const [showModal, setModal] = useState<boolean>(false);
   const token = useSelector(
     (state: RootState) => state?.auth?.user?.access_token
@@ -69,7 +70,7 @@ const Admin: React.FC<IState> = () => {
       const data = await (await authApi.getUsers(token))?.data;
       setAdminData(data);
     })();
-  }, []);
+  }, [token]);
   return (
     <>
       <div className="flex flex-col p-5 mx-auto">
